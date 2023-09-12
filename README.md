@@ -22,7 +22,7 @@ wget https://dl.fbaipublicfiles.com/fair-esm/regression/esm2_t33_650M_UR50D-cont
 pip install -r requirements.txt
 ```
 
-**3. Information about how to use the script**
+**4. Information about how to use the script**
 
 ```bash
 python ESM2_predict.py -h
@@ -40,3 +40,12 @@ optional arguments:
   --plot_heatmap PLOT_HEATMAP
                         Flag to indicate if the heatmap should be plotted
 ```
+
+## Outputs
+
+This scripts uses as input a UNIPROT_ID and will predict the likelihood ratio for each position for each aminoacid and also the residues interaction heatmap. 
+It will generate two files called {UNIPROT_ID}_heatmap_data.txt and {UNIPROT_ID}_log_likelihood_ratio.txt containing the data from the heatmap and log likelihood ration respectivelly. 
+By default will generate plotly plots for each of the two items.
+
+
+
