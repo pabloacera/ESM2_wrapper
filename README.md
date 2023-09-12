@@ -22,4 +22,21 @@ wget https://dl.fbaipublicfiles.com/fair-esm/regression/esm2_t33_650M_UR50D-cont
 pip install -r requirements.txt
 ```
 
+**3. Information about how to use the script**
 
+```bash
+python ESM2_predict.py -h
+usage: ESM2_predict.py [-h] -u UNIPROT_ID -f MODEL_FOLDER [--plot_llr PLOT_LLR] [--plot_heatmap PLOT_HEATMAP]
+
+Script to process UniProt ID and generate outputs
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -u UNIPROT_ID, --uniprot_id UNIPROT_ID
+                        UniProt ID to be processed
+  -f MODEL_FOLDER, --model_folder MODEL_FOLDER
+                        Folder path where the mode
+  --plot_llr PLOT_LLR   Flag to indicate if the log likelihood ratio should be plotted
+  --plot_heatmap PLOT_HEATMAP
+                        Flag to indicate if the heatmap should be plotted
+```
